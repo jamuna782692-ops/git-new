@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>linear and radial gradient</title>
+<style>
+.box{
+width:350px;
+height:200px;
+border-radius:2px;
+margin:20px;
+padding:20px;
+color:white;
+font-size:22px;
+}
+.linear{
+width:450px;
+float:left;
+margin:10px;
+}
+.radial{
+width:450px;
+float:left;
+margin:10px;
+}
+.linear{
+background:linear-gradient(to right,red, blue);
+-webkit-background-clip:text;
+color:transparent;
+}
+.radial{
+background:radial-gradient(green,violet,pink);
+-webkit-background-clip:text;
+color:transparent;
+}
+::selection{
+color:blue;
+background-color:pink;
+}
+</style>
+</head>
+<body>
+<h1>css gradient</h1>
+<div class="box linear">
+<p style="text-align: centre;font-weight:bold;">linear gradient transitions colors in a straight line. The direction can be specified as vertical, horizontal, diagonal, or at a custom angle. It is defined by an axis called the gradient line.</p>
+</div>
+<div class="box radial">
+<p style="text-align:centre;font-weight:bold;"> radial gradient displays a color transition that radiates outward from a central point. The shape of the gradient can be defined as either a circle or an ellipse, with an ellipse as the default shape.</p>
+</div>
+<p><img src="C:\Users\jamun\OneDrive\Pictures\Screenshots\flower.jpg.png"alt="flower.jpg"width="460"height="345"><br></p>
+</body>
+</html>
+ 
+
