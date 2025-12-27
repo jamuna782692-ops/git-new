@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>moon</title>
+<style>
+.moon{
+background:black;
+width:250px;
+height:250px;
+border-radius:50%;
+position:relative;
+}
+.moon::before{
+content:"";
+background-color:white;
+position:absolute;
+display:block;
+height:100%;
+width:100%;
+border-radius:50%;
+animation:3.2s animation linear infinite alternate;}
+@keyframes animation{
+0%{
+transform:translatex(40px) scale(0.9);
+box-shadow:none;
+}
+50%{
+transform:translate(0px,0px) scale(1.02);
+}
+100%{
+transform:translatex(-40px) scale(0.9);
+box-shadow:none;
+}
+</style>
+</head>   
+<body>
+<nav>
+<a href="moon.html">moon</a>
+<a href="nature.html">nature</a>
+</nav>
+<div class="moon"></div>
+</body>
+</html>
